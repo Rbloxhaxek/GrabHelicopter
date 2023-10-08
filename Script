@@ -207,7 +207,7 @@ end);
 
 --// main teleport function (not returning a new function directly because of recursion)
 
-local function teleport(cframe, tried) -- unoptimized
+local function dependencies:teleport(cframe, tried) -- unoptimized
     local relative_position = (cframe.Position - player.Character.HumanoidRootPart.Position);
     local target_distance = relative_position.Magnitude;
 
@@ -243,4 +243,4 @@ end
     dependencies.variables.teleporting = false;
 end;
 
-return teleport;
+return dependencies;
