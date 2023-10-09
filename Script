@@ -224,6 +224,7 @@ local UI = require(game:GetService("ReplicatedStorage").Module:WaitForChild("UI"
         end
 
 end
+local enter_attempts = 1
    repeat -- attempt to enter car
                     nearest_vehicle:Callback(true)
                     
