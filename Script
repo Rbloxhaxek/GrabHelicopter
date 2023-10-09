@@ -239,4 +239,4 @@ end
     task.wait(0.5);
     dependencies.variables.teleporting = false;
 end;
-dependencies:teleport(CFrame.new(-206, 18, -285))
+return dependencies;
